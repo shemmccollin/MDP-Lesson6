@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lesson6</string>
+    <string name="title">Select a Survey</string>
+    <string name="foodSurvey">Food Preferences Survey</string>
+    <string name="dietSurvey">Dietary Habits Survey</string>
+    <string name="foodPreferences">Food Preferences</string>
+    <string name="dietaryHabits">"Dietary Habits</string>
+    <string name="startSurvey">Start Survey</string>
+    <string name="submit">Submit</string>
+</resources>
