@@ -35,6 +35,17 @@ class SurveyActivity : AppCompatActivity() {
             initSurveys(choice)
         }
 
+        if(savedInstanceState != null)
+        {
+            binding.output.text = savedInstanceState.getString("output")
+            binding.rv.layoutManager?.onRestoreInstanceState(savedInstanceState.getParcelable("manager"))
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("output", binding.output.text.toString())
+        outState.putParcelable("manager", binding.rv.layoutManager?.onSaveInstanceState())
     }
 
     private fun initSurveys(choice: String){
@@ -86,6 +97,5 @@ class SurveyActivity : AppCompatActivity() {
 
             binding.output.text = content
         }
-
     }
 }

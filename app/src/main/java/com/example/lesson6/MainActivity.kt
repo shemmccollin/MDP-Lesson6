@@ -26,6 +26,16 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        if(savedInstanceState != null)
+        {
+            binding.radioGroup.check(savedInstanceState.getInt("choice"))
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("choice", binding.radioGroup.checkedRadioButtonId)
     }
 
     fun onStartBtnClick(view: View) {
@@ -40,13 +50,11 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, SurveyActivity::class.java)
         intent.putExtra("choice", "food")
         startActivity(intent)
-        binding.radioGroup.clearCheck()
     }
 
     private fun dietSelected(){
         val intent = Intent(this, SurveyActivity::class.java)
         intent.putExtra("choice", "diet")
         startActivity(intent)
-        binding.radioGroup.clearCheck()
     }
 }
