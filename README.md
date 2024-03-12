@@ -1,6 +1,6 @@
 Food Preferences Survey and Electronic Gadgets Apps
 
-Starting View
+Food Preferences Survey Starting View
 ![img.png](img.png)
 
 No Option Selected
@@ -20,3 +20,16 @@ Food Preferences all questions answered with summary
 
 Dietary Habits all questions answered with summary
 ![img_6.png](img_6.png)
+
+
+Electronic Gadgets Starting View
+![img_7.png](img_7.png)
+
+Details View
+![img_8.png](img_8.png)
+
+Item Added
+![img_9.png](img_9.png)
+
+Viewing Cart
+![img10.png](img10.png)

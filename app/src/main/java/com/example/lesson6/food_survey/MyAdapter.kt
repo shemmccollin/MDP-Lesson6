@@ -1,4 +1,4 @@
-package com.example.lesson6
+package com.example.lesson6.food_survey
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lesson6.R
 
 class MyAdapter(val context: Context, private val survey: ArrayList<Survey>): RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
 
@@ -35,11 +36,6 @@ class MyAdapter(val context: Context, private val survey: ArrayList<Survey>): Re
 
         holder.choiceGroup.setOnCheckedChangeListener { _, checkedId ->
             selectedPositions[position] = checkedId
-        }
-
-        holder.choiceGroup.setOnClickListener(){
-
-            Toast.makeText(context, holder.choiceGroup.checkedRadioButtonId.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 

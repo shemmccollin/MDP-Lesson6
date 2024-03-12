@@ -13,10 +13,16 @@
         android:theme="@style/Theme.Lesson6"
         tools:targetApi="31">
         <activity
-            android:name=".SurveyActivity"
+            android:name=".electronic_gadgets.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".electronic_gadgets.ElectronicsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".food_survey.SurveyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".food_survey.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

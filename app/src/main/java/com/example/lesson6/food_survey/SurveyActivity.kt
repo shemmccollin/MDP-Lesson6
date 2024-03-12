@@ -1,8 +1,6 @@
-package com.example.lesson6
+package com.example.lesson6.food_survey
 
-import android.content.res.Resources
 import android.os.Bundle
-import android.view.Gravity
 import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -10,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.lesson6.R
 import com.example.lesson6.databinding.ActivitySurveyBinding
 
 class SurveyActivity : AppCompatActivity() {

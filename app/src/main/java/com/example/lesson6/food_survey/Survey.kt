@@ -1,4 +1,4 @@
-package com.example.lesson6
+package com.example.lesson6.food_survey
 
 import java.io.Serializable
 
